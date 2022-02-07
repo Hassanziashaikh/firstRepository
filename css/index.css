@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+header
+{
+    width: 100%;
+    padding: 20px 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h2
+{
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+header ul
+{
+    display: flex;
+}
+header ul li
+{
+    margin-left: 35px;
+}
+header ul li a
+{
+    color: #fff;
+    padding: 4px 10px;
+}
+header ul li a:hover
+{
+    background-color: lightgray;
+    color: #000;
+}
+.banner
+{
+    width: 100%;
+    height: 80vh;
+    background:linear-gradient(90deg, rgba(148,0,0,0.5) 0%, rgba(46,46,46,1) 100%), url(../images/bg2.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h2
+{
+    margin-top: 70px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 6em;
+    letter-spacing: 20px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 500;
+}
+.about
+{
+    width: 100%;
+    padding: 70px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,1) 100%), url(../images/bg3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+.about .aboutContent
+{
+    width: 47%;
+}
+.about .aboutContent h2
+{
+    color: #fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.about .aboutContent p
+{
+    color: #eee;
+    margin-top: 15px;
+}
+.about .aboutImg
+{
+    width: 50%;
+}
+.about .aboutImg img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ourTeam
+{
+    width: 100%;
+    padding: 50px;
+    background-color: #111;
+}
+.ourTeam .title
+{
+    text-align: center;
+}
+.ourTeam .title h2
+{
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.ourTeam .title p
+{
+    color: #eee;
+}
+.ourTeam .ourTrainers
+{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ourTeam .ourTrainers .trainerCard
+{
+    width: 270px;
+    height: 450px;
+    border: 1px solid #fff;
+    transition-duration: 0.4s;
+}
+.ourTeam .ourTrainers .trainerCard img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ourTeam .ourTrainers .trainerCard:hover
+{
+    transform: scale(1.1);
+}
+.testimonials
+{
+    width: 100%;
+    padding: 50px;
+    background-color: #000;
+}
+.testimonials h2
+{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.3em;
+}
+.testimonials .feedback
+{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.testimonials .feedback .feedbackCard
+{
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition-duration: 0.4s;
+}
+.testimonials .feedback .feedbackCard img
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.testimonials .feedback .feedbackCard p
+{
+    color: #fff;
+    text-align: center;
+    margin: 15px 0px;
+    font-style: italic;
+}
+.testimonials .feedback .feedbackCard h2
+{
+    font-size: 1.4em;
+}
+.testimonials .feedback .feedbackCard:hover
+{
+    transform: scale(1.1);
+}
+.contact
+{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(90deg, rgba(93, 0, 0, 0.5) 0%, rgba(46,46,46,1) 100%), url(../images/bg7.jpg);
+    background-size: cover;
+    padding: 50px;
+}
+.contact h2
+{
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px red,0 0 20px red,0 0 30px red;
+}
+.contact .contactForm
+{
+    margin: 170px auto;
+    width: 55%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.contact .contactForm input
+{
+    border: none;
+    outline: none;
+    background-color: #222;
+    padding: 12px;
+    width: 100%;
+    color: #fff;
+}
+.contact .contactForm input[type="number"],
+.contact .contactForm input[type="email"]
+{
+    margin-top: 20px;
+    width: 49.5%;
+}
+.contact .contactForm input::placeholder
+{
+    color: yellowgreen;
+}
+.contact .contactForm textarea
+{
+    width: 100%;
+    height: 200px;
+    background-color:  black;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 12px;
+    color: white;
+}
+.contact .contactForm textarea::placeholder
+{
+    color: yellowgreen
+}
+.contact .contactForm button
+{
+    padding: 10px 30px;
+    background-color: #222;
+    border: 1px solid yellowgreen;
+    color: yellowgreen;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    font-weight: 500;
+    transition-duration: 0.4s;
+}
+.contact .contactForm button:hover
+{
+    background-color: yellowgreen;
+    color: black;
+}
